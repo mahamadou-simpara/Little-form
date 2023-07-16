@@ -1,0 +1,81 @@
+*{
+ box-sizing: border-box;
+ color: white;
+ font-family: 'Oleo Script', cursive;
+ font-family: 'Roboto', sans-serif;
+}
+
+body{
+ width: 100vw;
+ height: 100vh;
+ margin: 0;
+}
+#container{
+ width: 100%;
+ height: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ background-color: rgb(39, 106, 106);
+}
+#container form{
+ background-color: rgb(0, 43, 43);
+ padding: 35px 18px;
+ padding-bottom: 5px;
+ text-align: center;
+ border-radius: 4px;
+
+}
+#container form div{
+ position: relative;
+}
+
+#container form h1{
+ font-size: 20px;
+}
+
+#container form div label{
+ position: absolute;
+ display: block;
+ /* left: 10px; */
+ top: 15px;
+ font-size: 13px;
+}
+
+#container form div input{
+width: 100%;
+background-color: transparent;
+border: none;
+border-bottom: 2px solid lightblue;
+margin: 1rem 0;
+}
+#container form div input:active,
+#container form div input:focus{
+ outline: none;
+}
+
+#container form div button{
+ background-color: lightblue;
+ border: none;
+ border-radius: 3px;
+ font-size: 15px;
+ font-family: inherit;
+ padding: 8px 10px;
+ margin: 1rem 0;
+ width: 100%;
+ color: rgb(23, 23, 23);
+}
+
+#container form div button:hover{
+    background-color: rgb(41, 102, 122);
+}
+#container form a{
+ color: lightblue;
+ text-decoration: none;
+ font-size: 15px;
+}
+
+#container form div input:focus + #container form div label{
+ font-size: 30px;
+}
